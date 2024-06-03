@@ -28,7 +28,7 @@ namespace BankTransactions.Models
         public string SWIFTCode { get; set; }
         [Required(ErrorMessage = "This field is required")]
         public int Amount { get; set;}
-
+        [DisplayFormat(DataFormatString ="{0:MMM-dd-yy}")]
         public DateTime Date { get; set; }
 
 
